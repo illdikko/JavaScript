@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MonPremierJs</title>
 </head>
+
 <body>
     <h1>Mon Premier JS!</h1>
-    <noscript>
+    <!-- <noscript> // Si le script ne fonctionne pas , message alternatif
         <div style="background-color:coral">
             <h2>Ooops... Il y a un petit soucis!</h2>
             <p>Il semble que votre navigateur bloque l'interpreteur de JavaScript, ce qui empêche le site de fonctionner correctement...</p>
         </div>
-    </noscript>
-    <script type="text/javascript" src="./Scripts/main.js"></script>
-</body>
-</html>
+    </noscript> -->
 
+    <h1 id="dom_h1">Le DOM</h1>
+    <div>Rouge: <input type="range" name="Rouge" id="redRange"></div>
+    <div>Vert: <input type="range" name="Vert" id="greenRange"></div>
+    <div>Bleu: <input type="range" name="Bleu" id="blueRange"></div>
+    <div><input type="button" value="Actualiser" id="refreshButton" onclick="getHexColor()"></div>
+    <div>
+        <h2>Résultat :</h2>
+        <input type="color" id="result">
+    </div>
+
+    <script type="text/javascript" src="./Scripts/mainDOM.js"></script>
+</body>
+
+</html>
