@@ -17,7 +17,19 @@
         </div>
     </noscript> -->
 
-    <h1 id="dom_h1">Le DOM</h1>
+    <div>
+        <label for="prenom">Quel est votre prénom?</label>
+        <input id="prenom" type="text">
+    </div>
+    <div>
+        <p> Quel est votre animal préféré?</p>
+        <label for="animalChat">Chat</label><input id="animalChat" type="radio" name="animal" value="Chat">
+        <label for="animalChien">Chien</label><input id="animalChien" type="radio" name="animal" value="Chien">
+        <label for="animalAutre">Autre</label><input id="animalAutre" type="radio" name="animal" value="Autre">
+    </div>
+    <input type="button" value="Sauvegarder" onclick="saveInfo()">
+
+    <!-- <h1 id="dom_h1">Le DOM</h1>
     <div>Rouge: <input type="range" name="Rouge" id="redRange"></div>
     <div>Vert: <input type="range" name="Vert" id="greenRange"></div>
     <div>Bleu: <input type="range" name="Bleu" id="blueRange"></div>
@@ -25,9 +37,10 @@
     <div>
         <h2>Résultat :</h2>
         <input type="color" id="result">
-    </div>
+    </div>-->
 
-    <script type="text/javascript" src="./Scripts/mainDOM.js"></script>
+    <script type="text/javascript" src="./Scripts/main.js"></script> 
+    <!-- <script type="text/javascript" src="./Scripts/mainDOM.js"></script> -->
 </body>
 
 </html>

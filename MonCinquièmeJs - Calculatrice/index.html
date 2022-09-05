@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="Stylesheet" href="./styles.css"
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div>
+        <div><input type="text" id="show" disabled></div>
+        <div>
+            <input id="num_1" type="button" value="1" onclick="pressNumber(1)">
+            <input id="num_2" type="button" value="2" onclick="pressNumber(2)">
+            <input id="num_3" type="button" value="3" onclick="pressNumber(3)">
+            <input id="add"   type="button" value="+" onclick="pressOperator('+')">
+        </div>
+        <div>
+            <input id="num_4" type="button" value="4" onclick="pressNumber(4)">
+            <input id="num_5" type="button" value="5" onclick="pressNumber(5)">
+            <input id="num_6" type="button" value="6" onclick="pressNumber(6)">
+            <input id="sub"   type="button" value="-" onclick="pressOperator('-')">
+        </div>
+        <div>
+            <input id="num_7" type="button" value="7" onclick="pressNumber(7)">
+            <input id="num_8" type="button" value="8" onclick="pressNumber(8)">
+            <input id="num_9" type="button" value="9" onclick="pressNumber(9)">
+            <input id="multi" type="button" value="*" onclick="pressOperator('*')">
+        </div>
+        <div>
+            <input id="num_0" type="button" value="0" onclick="pressNumber(0)">
+            <input id="decimal" type="button" value="." onclick="pressDecimal()">
+            <input id="div" type="button" value="/" onclick="pressOperator('/')">
+            <input id="result" type="button" value="=" onclick="pressEqual()">
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
