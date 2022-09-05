@@ -3,6 +3,7 @@ let input2;
 let operator;
 let decimalPressed=false;
 let equalPressed=false;
+let operatorPressed = false;
 const html_show = document.getElementById("show");
 html_show.value = 0;
 
@@ -31,8 +32,14 @@ const pressOperator = function (operateur)
 {
     input1 = parseFloat(html_show.value);
     operator = operateur;
+    operatorPressed = true;
     html_show.value="0";
     decimalPressed = false;
+    
+    if (pressOperator()) {
+        
+        
+    }
 }
 
 const pressEqual = function () 
