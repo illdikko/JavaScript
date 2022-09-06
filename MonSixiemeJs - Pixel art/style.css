@@ -1,0 +1,19 @@
+th {
+    font-size: xx-large;
+}
+
+td {
+    border-width: 2px solid #333;
+
+}
+
+div {
+    height: 32px;
+    width: 32px;
+}
+
+body:nth-child(1) tbody:nth-child(1)  {
+    border: 2px solid #333;
+    width: 64px;
+}
+
