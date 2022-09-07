@@ -1,19 +1,19 @@
 th {
-    font-size: xx-large;
+    font-size: large;
 }
 
 td {
-    border-width: 2px solid #333;
+    border: black 1px solid;
+}
+
+.picker>div , .pixel>div {
+    height: 45px;
+    width: 45px;
 
 }
 
-div {
-    height: 32px;
-    width: 32px;
-}
-
-body:nth-child(1) tbody:nth-child(1)  {
-    border: 2px solid #333;
-    width: 64px;
+.currentColor {
+    width: 90px;
+    height: 90px;
 }
 

@@ -5,183 +5,393 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" 
-    <title> Pixel Art</title>
+    <link rel="stylesheet" href="style.css" <title><h1> Pixel Art</h1></title>
 </head>
 
 <body>
-    <table>
+    <table class ="ColorPicker">
         <thead>
             <tr>
-                <th colspan="5">ColorPicker</th>
+                <th colspan="6">ColorPicker</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="background-color: red ;">
-                    <div style="background-color: red ;"></div>
+                <td class="red picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: yellow ;">
-                    <div style="background-color: yellow ;"></div>
+                <td class="yellow picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: blue ;">
-                    <div style="background-color: blue ;"></div>
+                <td class="blue picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: green ;">
-                    <div style="background-color: green ;"></div>
+                <td class="green picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: black;">
-                    <div style="background-color: black ;"></div>
+                <td class="black picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td rowspan="2"></td>
+                <td rowspan="2" colspan="2" class="currentColor">
+                    <div></div>
+                </td>
 
             </tr>
             <tr>
-                <td style="background-color: grey ">
-                    <div style="background-color: grey;"></div>
+                <td class="grey picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: orangered ;">
-                    <div style="background-color: orangered ;"></div>
+                <td class="orangered picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: pink ;">
-                    <div style="background-color: pink ;"></div>
+                <td class="pink picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: purple ;">
-                    <div style="background-color: purple ;"></div>
+                <td class="purple picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
-                <td style="background-color: white ;">
-                    <div style="background-color: white ;"></div>
+                <td class="white picker" picker" onclick="colorPick(this)">
+                    <div></div>
                 </td>
             </tr>
         </tbody>
+        </table>
+
         <br>
         <br>
         <br>
-        <table>
+
+        <table class="pixelArt">
+            <thead>
+                <tr>
+                    <th colspan="10">Color Me!</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
+                    <td class="pixel" onclick="color(this)">
+                        <div></div>
+                    </td>
                 </tr>
-            </tbody>
 
+            </tbody>
         </table>
+        <script src="./main.js"></script>
 </body>
 
 </html>
