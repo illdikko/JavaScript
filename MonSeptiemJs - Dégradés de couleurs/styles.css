@@ -1,0 +1,9 @@
+td {
+    border: solid black 1px;
+}
+
+td>div {
+    width: 32px;
+    height: 32px;
+    border: none;
+}
