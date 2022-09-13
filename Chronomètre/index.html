@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>Créez une application permettant d'avoir un chronomètre interactif.</p>
+        <p>1) SetInterval/SetTimeout</p>
+        <p>Affichez un chronomètre au format HH:MM:SS. Le chronomètre est accompagné de 4 boutons:
+        <ul>
+            <li>Le premier bouton "play" permet d'enclencher le chronomètre. Il est actif lorsque le chrono ne
+                fonctionne
+                pas.</li>
+            <li>Le second bouton "pause" permet d'arrêter le chronomètre. Il est actif quand le chronomètre fonctionne.
+            </li>
+            <li>Le troisième bouton "Reset" permet de réinitialiser le chronomètre. Il est actof quand le chrono n'est
+                pas à
+                00:00:00.</li>
+            <li>le quatrième bouton "sauver" permet de sauvvegarder le temps dans une liste. Il est activ quand le
+                chronomètre n'est pas à 00:00:00.</li>
+        </ul>
+        </p>
+        <p>2) Evenement</p>
+        <p>Ajoutez un comportement :
+        <ul>
+            <li>Quand vous passez la souris sur le chrono, il se met en pause.</li>
+            <li>Quand vous double clickez sur un des temps sauvegardés le chrono reprend ce temps.</li>
+            <li>Quand vous appuyez sur la touche Enter, le chrono se lance.</li>
+        </ul>
+        </p>
+    </div>
+    <hr>
+    <div>
+        <h1>Chronomètre</h1>
+        <div>
+            <h1></h1>
+        </div>
+        <div>
+            <input type="button" value="Play" id="play" onclick="play()">
+            <input type="button" value="Pause" id="pause" onclick="pause()">
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Save" id="save" onclick="save()">
+            <input type="button" value="Reset" id="reset" onclick="reset()">
+        </div>
+    </div>
+    <br>
+    <div>
+        <table>
+            <thead>
+                <h3>Temps enregistrés</h3>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

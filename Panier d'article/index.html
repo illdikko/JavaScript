@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Produits disponibles à la vente : </h2>
+    <table id="Produits">
+        <tbody>
+            <tr>
+                <td id="chaise">Chaise</td>
+                <td id="prix_chaise">25</td>
+                <td><input type="button" value="Ajouter" onclick="ajouter()"></td>
+            </tr>
+            <tr>
+                <td id="table">Table</td>
+                <td id="prix_table">150</td>
+                <td><input type="button" value="Ajouter" onclick="ajouter()"></td>
+            </tr>
+            <tr>
+                <td id="meubleTv">Meuble TV</td>
+                <td id="prix_meubleTv">250</td>
+                <td><input type="button" value="Ajouter" onclick="ajouter()"></td>
+            </tr>
+        </tbody>
+    </table>
+<hr>
+    <h2>Mon Panier :</h2>
+    <table id="panier">
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <label>Prix Total : <input type="text" name="Prix total" id="total" disabled></label>
+    <script src="./main.js"></script>
+</body>
+
+</html>
